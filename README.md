@@ -10,7 +10,7 @@
 
 <br>
 
-Entendendo e criando componentes com HTML e JavaScript, para dar os primeiros passos em Angular.
+Entendendo e criando componentes com HTML e JavaScript, para compreender os conceitos de componentes.
 
 ##
 ### Tecnologias utilizadas:
@@ -20,3 +20,6 @@ Entendendo e criando componentes com HTML e JavaScript, para dar os primeiros pa
    <img align="center" alt="HTML" height="30" width="40" alt="HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
    <img align="center" alt="HTML" height="30" width="40" alt="css" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
 </div>
+
+##
+![componentes-estudo-DIO](./src/assets/resultado.png)

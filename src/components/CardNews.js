@@ -36,7 +36,7 @@ class CardNews extends HTMLElement {
 
         const newsImage = document.createElement("img");
         newsImage.src = "./assets/" + (this.getAttribute("photo") || "default.png");
-        newsImage.alt = "Hi, Barbie!"
+        newsImage.alt = this.getAttribute("text-photo") || "Hi";
 
         cardRight.appendChild(newsImage);
 
@@ -44,7 +44,48 @@ class CardNews extends HTMLElement {
     }
 
     styles() {
+        const style = document.createElement("style");
+        style.textContent = `
+            .card {
+            width: 60%;
+            box-shadow: 9px 9px 27px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 9px 9px 27px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 9px 9px 27px 0px rgba(0, 0, 0, 0.75);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            }
+            
+            .card__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10px;
+            }
+            
+            .card__left > span {
+            font-weight: 400;
+            }
+            
+            .card__left > a {
+            margin-top: 15px;
+            font-size: 25px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            }
+            
+            .card__left > p {
+            color: rgb(70, 70, 70);
+            }
 
+            img {
+            width: 400px;
+            height: 300px
+            }
+        `;
+
+        return style;
     }
 }
 
