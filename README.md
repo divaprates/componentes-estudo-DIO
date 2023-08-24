@@ -6,6 +6,7 @@
 <p> Plataforma : DIO </p>
 <p> Bootcamp : Santander Bootcamp 2023 - Fullstack Java+Angular </p>
 <p> Módulo : Ganhando produtividade com Angular </p>
+<p> Com: Felipe Silva Aguiar </p>
 <p> Atividade 1 : Trabalhando com Web Components no Front-end </p>
 
 <br>
