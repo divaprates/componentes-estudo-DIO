@@ -3,8 +3,8 @@ class CardNews extends HTMLElement {
         super();
 
         const shadow = this.attachShadow({ mode: "open" });
-        shadow.appendChild(this.build);
-        shadow.appendChild(this.styles);
+        shadow.appendChild(this.build());
+        shadow.appendChild(this.styles());
     }
 
     build() {
@@ -21,8 +21,13 @@ class CardNews extends HTMLElement {
         componentRoot.appendChild(cardRight);
 
         const autor = document.createElement("span");
+        autor.textContent = "By " + (this.getAttribute("autor") || "Anonymous");
+
         const linkTitle = document.createElement("a");
+        linkTitle.textContent = this.getAttribute("title");
+
         const newsContent = document.createElement("p");
+        newsContent.textContent = this.getAttribute("content");
 
         cardLeft.appendChild(autor);
         cardLeft.appendChild(linkTitle);
